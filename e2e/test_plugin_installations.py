@@ -39,6 +39,7 @@ class PluginTestCase(TestCase):
             "hipchat": "0.1.9",
             "jobConfigHistory": "2.10",
             "mask-passwords": "2.8",
+            "splunk-devops": "1.6.4",
             # The following plugins should be installed as dependencies for
             # the plugins installed via test_data/plugins.yml
             "node-iterator-api": "1.1",
@@ -50,7 +51,7 @@ class PluginTestCase(TestCase):
             "github-api": "1.82",
             "git": "2.4.0",
             "git-client": "1.18.0",
-            "junit": "1.3",
+            "junit": "1.18",
             "scm-api": "2.0.3",
             "script-security": "1.27",
             "ssh-credentials": "1.11",
