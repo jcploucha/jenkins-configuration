@@ -53,6 +53,8 @@ config.setMaxEventsBatchSize(new Long(splunkConfig.MAX_EVENT_BATCH_SIZE))
 config.setSplunkAppUrl(splunkConfig.SPLUNK_APP_URL)
 config.setRetriesOnError(splunkConfig.RETRIES_ON_ERROR)
 config.setIgnoredJobs(splunkConfig.IGNORED_JOBS_PATTERN)
+config.setMetadataHost(splunkConfig.MASTER_HOSTNAME)
+config.setMetadataSource(splunkConfig.EVENT_SOURCE)
 
 List<String> dataSources = [
     "Build Event",
@@ -88,8 +90,6 @@ for (metadataConfig in splunkConfig.METADATA) {
 }
 config.setMetadataItemSet(metaDataItems)
 
-config.setMetadataHost('abc')
-config.setMetadataSource('def')
 
 config.updateCache();
 
